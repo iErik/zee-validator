@@ -13,6 +13,7 @@ import { ValidationRule } from '../types'
 
 const rule: ValidationRule = {
   validate: (value: any): boolean => {
+    if (value instanceof Date) return value.getTime() === value.getTime()
     if (Array.isArray(value)) return !!value.length
     if (typeof value === 'object') return !!Object.keys(value).length
     if (typeof value === 'string') return !!value.trim().length
