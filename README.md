@@ -1,8 +1,8 @@
-<h1 align="center">vue-convenia-validator</h1>
+<h1 align="center">zee-validator</h1>
 
-vue-convenia-validator is a model-based form validation library for Vue.js
+zee-validator is a model-based form validation library for Vue.js
 inspired by Vuelidate and VeeValidate. Unlike Vuelidate and VeeValidate,
-vue-convenia-validator is meant to be used as a mixin rather than as a plugin.
+zee-validator is meant to be used as a mixin rather than as a plugin.
 
 
 ### Installation
@@ -10,18 +10,18 @@ vue-convenia-validator is meant to be used as a mixin rather than as a plugin.
 #### npm
 
 ```
-npm install vue-convenia-validator --save
+npm install zee-validator --save
 ```
 
 #### yarn
 
 ```
-yarn add vue-convenia-validator
+yarn add zee-validator
 ```
 
 ### Usage
 
-vue-convenia-validator is a model-based, template-independent validation library,
+zee-validator is a model-based, template-independent validation library,
 which means that it is completely decoupled from how you build your templates.
 In order to use your component has to define a `validation` option object
 defining the validation rules for your form(s):
@@ -37,7 +37,7 @@ defining the validation rules for your form(s):
 <template>
 
 <script>
-import FormValidator from 'cee-validate'
+import FormValidator from 'zee-validate'
 
 export default {
   mixins: [ FormValidator ],
@@ -78,7 +78,7 @@ attribute is only necessary on the `<form>` tag when using scoped forms:
 <template>
 
 <script>
-import FormValidator from 'cee-validate'
+import FormValidator from 'zee-validate'
 
 export default {
   mixins: [ FormValidator ],
