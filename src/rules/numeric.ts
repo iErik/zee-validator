@@ -13,7 +13,7 @@ import { ValidationRule } from '../types'
 
 const rule: ValidationRule = {
   validate: (value: string): boolean => {
-    if (!value) return true
+    if (!value || typeof value === 'number') return true
 
     return !!value.trim() && /^(\d+(\.\d+)?$)/.test(value.trim())
   },
