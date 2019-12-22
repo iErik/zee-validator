@@ -231,6 +231,7 @@ export default class ScopedValidator {
 
   reset (scope?: string): void {
     this.fields.all(scope).forEach((field: Field) => field.reset())
+    this.validations = this.mapValidations()
   }
 
   /**
